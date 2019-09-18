@@ -1,0 +1,127 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="fonts/opensans.css">
+		<link rel="stylesheet" href="style.css">
+		<title>Nickolay – Full stack blockchain developer</title>
+	</head>
+	<body>
+		
+		
+		<script src="lib/js-yaml.min.js"></script>
+		<script src="lib/vue.min.js"></script>
+		
+		<script src="stack-raw.js"></script>
+		
+		<section>
+			<div class="page-top">
+				<div class="top-left">
+					<div class="avatar"></div>
+				</div>
+				<div class="top-right">
+					<h1>Nickolay</h1>
+					<div class="specialization">Full stack blockchain developer</div>
+					<div class="info-item">
+						<span class="icon location"></span>
+						<span class="value">Ready to relocation / remote</span>
+					</div>
+					<div class="info-item">
+						<span class="icon github"></span>
+						<span class="value"><a href="https://github.com/iower" traget="_blank">iower</a></span>
+					</div>
+					<div class="info-item">
+						<span class="icon email"></span>
+						<span class="value"><a href="mailto:iower@tutanota.com">iower@tutanota.com</a></span>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<div class="subheader">
+			<h2>My full stack state</h2>
+		</div>
+		
+		<section>
+			<div id="stack">
+				
+				<div class="settings">
+					<div class="checkbox">
+						<!-- <input type="checkbox" id="only-important" v-model="onlyImportant">
+						<label for="only-important">Only important</label>
+						<div class="label">Only important</div> -->
+					</div>
+					<div class="checkbox">
+						<input type="checkbox" id="show-projects" v-model="showExamples">
+						<label for="show-projects">Show projects</label>
+						<div class="label">Show projects</div>
+					</div>
+					<div class="checkbox">
+						<!-- <input type="checkbox" id="show-interests" v-model="showInterests">
+						<label for="show-interests">Show interests</label>
+						<div class="label">Show interests</div> -->
+					</div>
+					<!-- <div class="checkbox">
+						<input type="checkbox" id="show-recommendations" v-model="showRecommendations">
+						<label for="show-recommendations">Show my recommendations</label>
+						<div class="label">Show my recommendations</div>
+					</div> -->
+				</div>
+				
+				<div class="layer" v-for="layer in stackData">
+					<h3 class="layer-title" >{{ layer.title }}</h3>
+					<div class="layer-inner">
+						<ul class="layer-items" :class="`items-${layer.items.length}`">
+							<li class="layer-item" v-for="item in layer.items">
+								<div class="item-title">{{ item.title }}</div>
+								<transition name="fade">
+									<div class="examples" v-if="showExamples">
+										<div class="example" v-for="example in item.examples">
+											<span class="icon project"></span>
+											<a v-if="example.url" class="example" :href="example.url" target="_blank">{{ example.title }}</a>
+											<span v-else class="example">{{ example.title }}</span>
+										</div>
+									</div>
+								</transition>
+							</li>
+						</ul>
+					</div>
+				</div>
+				
+			</div>
+		</section>
+		<!--<h2>Unrelated pet projects</h2>
+		...
+		-->
+		
+		<div class="subheader">
+			<h2>My experience timeline</h2>
+		</div>
+		<section>
+			<ul>
+				<li>2003 – first program written</li>
+				<li>2006 – first markup written</li>
+				<li>2011 – first manual crypto trade</li>
+				<li>2015 – first commerical program</li>
+				<li>2016 – first share mined</li>
+				<li>2018 – first github commit</li>
+				<li>2019 – first automated crypto-trade</li>
+			</ul>
+		</section>
+		
+		<script>
+			const stackData = jsyaml.load(stackRaw);
+			
+			const app = new Vue({
+				el: '#stack',
+				data: {
+					stackData,
+					onlyImportant: true,
+					showExamples: true,
+					showInterests: true,
+					showRecommendations: false,
+				},
+			});
+			
+		</script>
+		
+	</body>
+</html>
