@@ -18,8 +18,8 @@ const stackRaw = `
     - Blue Ocean Strategy
     - The Goal by Goldratt
   
-#  - title: PO of product
-#    status: interested
+  - title: PO of product
+    status: interested
 
 
 - title: Communication
@@ -28,17 +28,17 @@ const stackRaw = `
   - title: Trello
     status: experienced
   
-#  - title: Slask
-#    status: interested
+  - title: Slask
+    status: interested
   
-#  - title: Jira
-#    status: interested
+  - title: Jira
+    status: interested
 
 
 - title: Self-organization / Goal-setting / Time management
   items:
   
-  - title: My fullstack state
+  - title: My full stack state
     status: experienced
     examples:
     - title: This document
@@ -107,18 +107,18 @@ const stackRaw = `
   - title: Automated trading
     status: experienced
   
-#  - title: Smart contracts
-#    status: interested
-#    subitems:
-#    
+  - title: Smart contracts
+    status: interested
+    subitems:
+    
 #    - title: Fift (ton)
 #      status: interested
 #    
 #    - title: Solidity/Vyper (etherium)
 #      status: interested
 #  
-#  - title: IPFS usage
-#    status: interested
+  - title: IPFS usage
+    status: interested
 
 #- title: Deployment
 # DO
@@ -143,10 +143,12 @@ const stackRaw = `
     subitems:
     - title: immutable
     - title: Ramda
-
-#  - title: Rust
-
-#  - title: Haskell
+  
+  - title: Rust
+    status: interested
+  
+  - title: Haskell
+    status: interested
   
 #  - title: OCaml
   
@@ -156,7 +158,8 @@ const stackRaw = `
 #    sources:
 #    # - some books
   
-#  - title: Fift
+  - title: Fift
+    status: interested
 
 
 - title: Frontend technologies
@@ -178,7 +181,7 @@ const stackRaw = `
     - title: throbby
       url: https://github.com/iower/throbby
   
-  - title: Slim + Slm
+  - title: Slim+Slm
     examples:
     - title: space-landing
       url: https://github.com/benice-tools/benice-space-landing
@@ -192,9 +195,8 @@ const stackRaw = `
     subitems:
     - title: Vuex
   
-#   - title: Chrome debugger
-  
-#  - title: React
+  - title: React
+    status: interested
 #    subitems:
 #    - title: redux -> GraphQL + Appollo
 #      subitems:
@@ -207,7 +209,8 @@ const stackRaw = `
 #    - title: react-downshift
 #    - title: firebase
   
-#  - title: Elm
+  - title: Elm
+    status: interested
 
 
 - title: Backend technologies
@@ -222,7 +225,8 @@ const stackRaw = `
       sources:
       - https://expressjs.com/ru/
   
-#  - title: TS
+  - title: TS
+    status: interested
 #    sources:
 #      - https://tproger.ru/translations/course-on-typescript/
 #      - https://metanit.com/web/typescript/1.1.php
@@ -240,6 +244,12 @@ const stackRaw = `
 
 - title: Related skills
   items:
+  
+  - title: Touch typing
+    examples:
+      - title: 300ppm/1%
+    sources:
+    - Stamina
   
   # - title: Awesome
   
@@ -266,12 +276,6 @@ const stackRaw = `
   #- title: SPA+SEO
   #  sources:
   #  - https://www.onely.com/blog/ultimate-guide-javascript-seo/
-
-  - title: Touch typing
-    examples:
-      - title: 300ppm/1%
-    sources:
-    - Stamina
   
   # - title: Sublime
   
@@ -293,9 +297,11 @@ const stackRaw = `
     examples:
     - title: (preparing for publication)
   
-#  - title: x64 ASM
+  - title: x64 ASM
+    status: interested
   
-#  - title: FPGA
+  - title: FPGA
+    status: interested
 
 
 - title: Electronics / Hardware development
@@ -304,6 +310,9 @@ const stackRaw = `
   - title: Circuit design
   
   - title: PCB design
+  
+  - title: IC design
+    status: interested
 
 
 `;

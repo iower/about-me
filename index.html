@@ -45,20 +45,22 @@
 			<div id="stack">
 				
 				<div class="settings">
+					<!--
 					<div class="checkbox">
-						<!-- <input type="checkbox" id="only-important" v-model="onlyImportant">
+						<input type="checkbox" id="only-important" v-model="onlyImportant">
 						<label for="only-important">Only important</label>
-						<div class="label">Only important</div> -->
+						<div class="label">Only important</div>
 					</div>
+					-->
 					<div class="checkbox">
 						<input type="checkbox" id="show-projects" v-model="showExamples">
 						<label for="show-projects">Show projects</label>
 						<div class="label">Show projects</div>
 					</div>
 					<div class="checkbox">
-						<!-- <input type="checkbox" id="show-interests" v-model="showInterests">
+						<input type="checkbox" id="show-interests" v-model="showInterests">
 						<label for="show-interests">Show interests</label>
-						<div class="label">Show interests</div> -->
+						<div class="label">Show interests</div>
 					</div>
 					<!-- <div class="checkbox">
 						<input type="checkbox" id="show-recommendations" v-model="showRecommendations">
@@ -70,18 +72,31 @@
 				<div class="layer" v-for="layer in stackData">
 					<h3 class="layer-title" >{{ layer.title }}</h3>
 					<div class="layer-inner">
-						<ul class="layer-items" :class="`items-${layer.items.length}`">
-							<li class="layer-item" v-for="item in layer.items">
+						<ul
+							class="layer-items"
+							:class="`items-${layer.items.filter(item => showInterests ? true : item.status != 'interested').length}`">
+							<li
+								class="layer-item"
+								:class="{interested: item.status == 'interested'}"
+								v-for="item in layer.items"
+								v-if="!(item.status == 'interested' && !showInterests)"
+							>
 								<div class="item-title">{{ item.title }}</div>
 								<transition name="fade">
 									<div class="examples" v-if="showExamples">
 										<div class="example" v-for="example in item.examples">
 											<span class="icon project"></span>
-											<a v-if="example.url" class="example" :href="example.url" target="_blank">{{ example.title }}</a>
+											<a
+												v-if="example.url"
+												class="example"
+												:href="example.url"
+												target="_blank"
+											>{{ example.title }}</a>
 											<span v-else class="example">{{ example.title }}</span>
 										</div>
 									</div>
 								</transition>
+								<div class="interested-label" v-if="item.status == 'interested'">Interested</div>
 							</li>
 						</ul>
 					</div>
@@ -117,7 +132,7 @@
 					stackData,
 					onlyImportant: true,
 					showExamples: true,
-					showInterests: true,
+					showInterests: false,
 					showRecommendations: false,
 				},
 			});
