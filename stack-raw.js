@@ -18,7 +18,7 @@ const stackRaw = `
     - Blue Ocean Strategy
     - The Goal by Goldratt
   
-  - title: PO of product
+  - title: Product owner role
     status: interested
 
 
