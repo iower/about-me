@@ -196,7 +196,9 @@ const stackRaw = `
     - title: Vuex
   
   - title: React
-    status: interested
+    examples:
+    - title: Organization-explorer
+      url: https://github.com/iower/Organization-explorer
 #    subitems:
 #    - title: redux -> GraphQL + Appollo
 #      subitems:
