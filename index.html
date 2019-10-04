@@ -13,10 +13,14 @@
 		
 		<script src="stack-raw.js"></script>
 		
+		<script src="avatar.js"></script>
+		
 		<section>
 			<div class="page-top">
 				<div class="top-left">
-					<div class="avatar"></div>
+					<div id="avatar-place">
+						<div id="avatar"></div>
+					</div>
 				</div>
 				<div class="top-right">
 					<h1>Nickolay</h1>
@@ -136,6 +140,23 @@
 					showRecommendations: false,
 				},
 			});
+			
+			
+			setInterval(() => {
+				
+				const avatarGlitched = [...avatar];
+				
+				for (let i = 0; i < 6; i++) {
+					const rowNumber = Math.floor(Math.random() * avatarGlitched.length);
+					const rowLength = avatarGlitched[rowNumber].length;
+					avatarGlitched[rowNumber] = '@'.repeat(rowLength);
+				}
+				
+				document.getElementById('avatar').innerText = avatarGlitched.join('\n');
+				
+			}, 100);
+			
+			
 			
 		</script>
 		

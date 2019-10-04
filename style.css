@@ -44,13 +44,26 @@ body {
 	width: 50%;
 }
 
-.avatar {
+#avatar-place {
 	width: 147px;
 	height: 182px;
 	margin-left: auto;
 	margin-right: auto;
-	border: 1px solid #bbb;
-	background-color: #eee;
+	border: 1px solid #555;
+	background-color: #888;
+	overflow: hidden;
+	position: relative;
+}
+
+#avatar {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scaleX(1.5);
+	font-size: 4.5px;
+	font-family: monospace;
+	text-align: center;
+	color: white;
 }
 
 .specialization {
