@@ -26,15 +26,15 @@
 					<h1>Nickolay</h1>
 					<div class="specialization">Full stack blockchain developer</div>
 					<div class="info-item">
-						<span class="icon location"></span>
+						<span class="icon-location"></span>
 						<span class="value">Ready to relocation / remote</span>
 					</div>
 					<div class="info-item">
-						<span class="icon github"></span>
+						<span class="icon-github"></span>
 						<span class="value"><a href="https://github.com/iower" traget="_blank">iower</a></span>
 					</div>
 					<div class="info-item">
-						<span class="icon email"></span>
+						<span class="icon-email"></span>
 						<span class="value"><a href="mailto:iower@tutanota.com">iower@tutanota.com</a></span>
 					</div>
 				</div>
@@ -57,9 +57,9 @@
 					</div>
 					-->
 					<div class="checkbox">
-						<input type="checkbox" id="show-projects" v-model="showExamples">
-						<label for="show-projects">Show projects</label>
-						<div class="label">Show projects</div>
+						<input type="checkbox" id="show-examples" v-model="showExamples">
+						<label for="show-examples">Show examples</label>
+						<div class="label">Show examples</div>
 					</div>
 					<div class="checkbox">
 						<input type="checkbox" id="show-interests" v-model="showInterests">
@@ -89,14 +89,14 @@
 								<transition name="fade">
 									<div class="examples" v-if="showExamples">
 										<div class="example" v-for="example in item.examples">
-											<span class="icon project"></span>
+											<span class="icon-example"></span>
 											<a
 												v-if="example.url"
-												class="example"
+												class="example-link"
 												:href="example.url"
 												target="_blank"
 											>{{ example.title }}</a>
-											<span v-else class="example">{{ example.title }}</span>
+											<span v-else class="example-title">{{ example.title }}</span>
 										</div>
 									</div>
 								</transition>

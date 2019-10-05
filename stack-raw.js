@@ -99,7 +99,9 @@ const stackRaw = `
     - https://info.binance.com/en/research/marketresearch/institutional-insights-Q2-2019.html
   
   - title: Exchanges API
-    status: experienced
+    examples:
+    - title: binance-depth-diagram
+      url: https://github.com/iower/binance-depth-diagram
   
   - title: Manual trading
     status: experienced
