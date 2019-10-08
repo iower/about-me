@@ -18,6 +18,7 @@ body {
 	background-color: #f3f3f3;
 	font-size: 16px;
 	/*transform: rotate(-0.3deg);*/
+	-webkit-text-size-adjust: none;
 }
 
 * {
