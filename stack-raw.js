@@ -100,8 +100,8 @@ const stackRaw = `
   
   - title: Exchanges API
     examples:
-    - title: binance-depth-diagram
-      url: https://github.com/iower/binance-depth-diagram
+    - title: market-depth-chart
+      url: https://github.com/iower/market-depth-chart
   
   - title: Manual trading
     status: experienced
