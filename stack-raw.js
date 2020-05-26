@@ -8,11 +8,13 @@ const stackRaw = `
   - title: Commercial projects
     status: experienced
   
-  - title: Participation in startup
+  - title: Participation in startups
     status: experienced
     examples:
     - title: benice.tools
       url: https://benice.tools
+    - title: Credentia
+      url: https://credentia.me
     sources:
     - Steve Blank books
     - Blue Ocean Strategy
@@ -29,7 +31,7 @@ const stackRaw = `
     status: experienced
   
   - title: Slask
-    status: interested
+    status: experienced
   
   - title: Jira
     status: interested
@@ -48,7 +50,7 @@ const stackRaw = `
     examples:
     - title: (preparing for publication)
   
-  - title: Schedule tracking soft
+  - title: Schedule tracking
     status: experienced
     examples:
     - title: pomodoro
@@ -103,12 +105,18 @@ const stackRaw = `
     - title: market-depth-chart
       url: https://github.com/iower/market-depth-chart
   
-  - title: Manual trading
+  - title: Manual/Automated trading
     status: experienced
+    examples:
+    - title: Credentia
+      url: https://credentia.me
   
-  - title: Automated trading
+  - title: web3
     status: experienced
-  
+    examples:
+    - title: Credentia
+      url: https://credentia.me
+
   - title: Smart contracts
     status: interested
     subitems:
@@ -127,41 +135,6 @@ const stackRaw = `
 # AWS
 #
 #- title: Databases
-
-- title: Fullstack technologies
-  items:
-  
-#  - title: WEB fundamentals
-#    sources:
-#    - https://developers.google.com/web/fundamentals/
-#    - https://developers.google.com/web/tools/
-  
-  - title: JS
-    sources:
-    - https://learn.javascript.info/
-    examples:
-    - title: snake-js-1kb
-      url: https://github.com/iower/snake-js-1kb
-    subitems:
-    - title: immutable
-    - title: Ramda
-  
-  - title: Rust
-    status: interested
-  
-  - title: Haskell
-    status: interested
-  
-#  - title: OCaml
-  
-#  - title: Purescript
-  
-#  - title: Forth
-#    sources:
-#    # - some books
-  
-  - title: Fift
-    status: interested
 
 
 - title: Frontend technologies
@@ -199,6 +172,8 @@ const stackRaw = `
   
   - title: React
     examples:
+    - title: Credentia
+      url: https://credentia.me
     - title: Organization-explorer
       url: https://github.com/iower/Organization-explorer
 #    subitems:
@@ -217,6 +192,55 @@ const stackRaw = `
     status: interested
 
 
+- title: Fullstack technologies
+  items:
+  
+#  - title: WEB fundamentals
+#    sources:
+#    - https://developers.google.com/web/fundamentals/
+#    - https://developers.google.com/web/tools/
+  
+  - title: JS
+    sources:
+    - https://learn.javascript.info/
+    examples:
+    - title: snake-js-1kb
+      url: https://github.com/iower/snake-js-1kb
+    subitems:
+    - title: immutable
+    - title: Ramda
+  
+  - title: TypeScript
+    examples:
+    - title: Credentia
+      url: https://credentia.me
+    sources:
+      - https://tproger.ru/translations/course-on-typescript/
+      - https://metanit.com/web/typescript/1.1.php
+      - http://www.typescriptlang.org/docs/home.html
+      - http://typescript-lang.ru/docs/
+      - https://refactoring.guru/ru/design-patterns/typescript
+
+  - title: Rust
+    status: interested
+  
+  - title: Haskell
+    status: interested
+    sources:
+    - http://book.realworldhaskell.org/read/
+  
+#  - title: OCaml
+  
+#  - title: Purescript
+  
+#  - title: Forth
+#    sources:
+#    # - some books
+  
+  - title: Fift
+    status: interested
+
+
 - title: Backend technologies
   items:
   
@@ -228,15 +252,6 @@ const stackRaw = `
     - title: Express
       sources:
       - https://expressjs.com/ru/
-  
-  - title: TS
-    status: interested
-#    sources:
-#      - https://tproger.ru/translations/course-on-typescript/
-#      - https://metanit.com/web/typescript/1.1.php
-#      - http://www.typescriptlang.org/docs/home.html
-#      - http://typescript-lang.ru/docs/
-#      - https://refactoring.guru/ru/design-patterns/typescript
 
 
 #- title: Math
@@ -312,8 +327,12 @@ const stackRaw = `
   items:
   
   - title: Circuit design
+    examples:
+    - title: (preparing for publication)
   
   - title: PCB design
+    examples:
+    - title: (preparing for publication)
   
   - title: IC design
     status: interested
