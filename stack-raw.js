@@ -33,6 +33,9 @@ const stackRaw = `
   - title: Slask
     status: experienced
   
+  - title: Figma
+    status: experienced
+  
   - title: Jira
     status: interested
 
