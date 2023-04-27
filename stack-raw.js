@@ -24,18 +24,21 @@ const stackRaw = `
     status: interested
 
 
-- title: Communication
+- title: Teamwork
   items:
   
+  - title: Figma
+    status: experienced
+
+  - title: Linear
+    status: experienced
+
   - title: Trello
     status: experienced
   
   - title: Slask
     status: experienced
-  
-  - title: Figma
-    status: experienced
-  
+
   - title: Jira
     status: interested
 
@@ -43,7 +46,7 @@ const stackRaw = `
 - title: Self-organization / Goal-setting / Time management
   items:
   
-  - title: My full stack state
+  - title: My stack state
     status: experienced
     examples:
     - title: This document
@@ -114,7 +117,7 @@ const stackRaw = `
     - title: Credentia
       url: https://credentia.me
   
-  - title: web3
+  - title: Web3
     status: experienced
     examples:
     - title: Credentia
@@ -143,19 +146,11 @@ const stackRaw = `
 - title: Frontend technologies
   items:
   
-  - title: HTML
-    status: experienced
-    examples:
-    - title: Lots of...
-  
-  - title: CSS
+  - title: CSS/SASS/Tailwind
     # status: experienced
     examples:
     - title: trip-512b-demo
       url: https://github.com/iower/quantum-trip-512b-demo
-  
-  - title: SASS
-    examples:
     - title: throbby
       url: https://github.com/iower/throbby
   
@@ -255,6 +250,8 @@ const stackRaw = `
     - title: Express
       sources:
       - https://expressjs.com/ru/
+  
+  - title: Go (learning now)
 
 
 #- title: Math
@@ -319,7 +316,7 @@ const stackRaw = `
     examples:
     - title: (preparing for publication)
   
-  - title: x64 ASM
+  - title: x64/ARM ASM
     status: interested
   
   - title: FPGA
