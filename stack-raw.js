@@ -36,7 +36,7 @@ const stackRaw = `
   - title: Trello
     status: experienced
   
-  - title: Slask
+  - title: Slack
     status: experienced
 
   - title: Jira
